@@ -12,9 +12,6 @@ pkg> add ImageClipboard
 ```
 
 ## Usage
-
-Just like `clipboard` in InteractiveUtils deals with string contents, this package provides `clipboard_img` to work with image contents:
-
 ```julia
 using Images, ImageClipboard
 
@@ -37,3 +34,9 @@ img == img2
 
 ### Paste an image
 ![](docs/src/img/screenshot_paste.gif)
+
+### Julia Compatibility
+
+For Julia versions older than v"1.3", you need to manually install the image IO backend [ImageMagcik.jl] first.
+
+[ImageMagick.jl]: https://github.com/JuliaIO/ImageMagick.jl
